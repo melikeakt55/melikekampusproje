@@ -5,16 +5,39 @@ Bu proje, üniversite öğrencilerinin kampüs içerisindeki sosyal etkileşimin
 🚀 Özellikler
 •
 Çift Rol Sistemli Üyelik: Kullanıcılar "Öğrenci" veya "Kulüp Sorumlusu" (Temsilci) olarak kayıt olabilirler.
+
+
+
+
+
+
+
 •
 Etkinlik Yönetimi: Kulüp sorumluları yeni etkinlikler oluşturabilir; tüm kullanıcılar etkinlikleri görüntüleyip "Katıl" butonu ile takibe alabilir.
+
+
+
 •
 Sosyal Akış (Social Feed): Kullanıcıların anlık düşüncelerini veya duyurularını paylaşabildiği, profil fotoğraflarının göründüğü dinamik bir akış ekranı.
+
+
+
+
 •
 Gelişmiş Profil Yönetimi: Kullanıcılar biyografilerini, okul/bölüm bilgilerini güncelleyebilir ve galeri üzerinden profil fotoğrafı yükleyebilir.
+
+
+
 •
 Oturum Yönetimi: SessionManager ile kullanıcı çıkış yapana kadar oturumun açık kalması sağlanır.
+
+
+
+
 •
 Yerel Veritabanı: Tüm veriler (Kullanıcılar, Etkinlikler, Katılımlar, Postlar) SQLite ile cihazda güvenli bir şekilde saklanır.
+
+
 🛠️ Kullanılan Teknolojiler
 •
 Dil: Java
