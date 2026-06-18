@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="12dp"
+    android:background="@drawable/card_border_blue"
+    android:padding="4dp">
+
+    <!-- Süresi Geçmiş Etiketi -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Süresi geçmiş etkinlik"
+        android:textColor="#FF6B6B"
+        android:textSize="11sp"
+        android:padding="4dp" />
+
+    <!-- Etkinlik Görseli -->
+    <ImageView
+        android:id="@+id/ivGecmisGorsel"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:background="#3A3A4E"
+        android:alpha="0.7"
+        android:contentDescription="Geçmiş etkinlik görseli" />
+
+    <!-- Detaylar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tvGecmisAd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Etkinlik Adı:"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tvGecmisTarih"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tarih ve Saat:"
+            android:textColor="#999999"
+            android:textSize="12sp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tvGecmisYer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yer Mekan:"
+            android:textColor="#999999"
+            android:textSize="12sp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tvGecmisDetay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Etkinlik Detayları:"
+            android:textColor="#777777"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+</LinearLayout>
