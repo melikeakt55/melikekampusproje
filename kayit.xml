@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#1A1A2E"
+    android:padding="32dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Yeni Hesap Oluştur"
+        android:textColor="#4FC3F7"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="32dp" />
+
+    <EditText
+        android:id="@+id/etRegUsername"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/input_border"
+        android:hint="Kullanıcı Adı"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#888888"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:inputType="text"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/etRegEmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/input_border"
+        android:hint="E-posta"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#888888"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/etRegPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/input_border"
+        android:hint="Şifre"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#888888"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:inputType="textPassword"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/etRegPasswordConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/input_border"
+        android:hint="Şifreyi Onayla"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#888888"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:inputType="textPassword"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hesap Türü:"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:layout_gravity="start"
+        android:layout_marginBottom="8dp" />
+
+    <RadioGroup
+        android:id="@+id/rgRole"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="32dp">
+
+        <RadioButton
+            android:id="@+id/rbStudent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Öğrenci"
+            android:textColor="#FFFFFF"
+            android:buttonTint="#4FC3F7"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/rbRepresentative"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Kulüp Sorumlusu"
+            android:textColor="#FFFFFF"
+            android:buttonTint="#4FC3F7" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Kayıt Ol"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#4FC3F7"
+        android:textSize="16sp"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:id="@+id/tvBackToLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zaten hesabın var mı? Giriş yap"
+        android:textColor="#4FC3F7"
+        android:textSize="14sp"
+        android:layout_marginTop="20dp" />
+
+</LinearLayout>
