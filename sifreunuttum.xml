@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#1A1A2E"
+    android:padding="32dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Şifremi Unuttum"
+        android:textColor="#4FC3F7"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="32dp" />
+
+    <!-- 1. ADIM: E-POSTA -->
+    <EditText
+        android:id="@+id/etForgotEmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/input_border"
+        android:hint="Kayıtlı E-posta Adresi"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#888888"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="16dp" />
+
+    <!-- 2. ADIM: DOĞRULAMA KODU (Başlangıçta gizli) -->
+    <EditText
+        android:id="@+id/etVerificationCode"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/input_border"
+        android:hint="Doğrulama Kodunu Girin"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#888888"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:inputType="number"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone" />
+
+    <!-- 3. ADIM: YENİ ŞİFRE ALANLARI (Başlangıçta gizli) -->
+    <EditText
+        android:id="@+id/etNewPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/input_border"
+        android:hint="Yeni Şifre"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#888888"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:inputType="textPassword"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/etConfirmNewPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/input_border"
+        android:hint="Yeni Şifreyi Onayla"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#888888"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:inputType="textPassword"
+        android:layout_marginBottom="32dp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnResetPassword"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="E-postayı Doğrula"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#4FC3F7"
+        android:textSize="16sp"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:id="@+id/tvBackToLoginFromForgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giriş ekranına geri dön"
+        android:textColor="#4FC3F7"
+        android:textSize="14sp"
+        android:layout_marginTop="20dp" />
+
+</LinearLayout>
