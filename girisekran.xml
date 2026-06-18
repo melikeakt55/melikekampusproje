@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#1A1A2E"
+    android:padding="32dp">
+
+    <!-- Logo veya Profil Alanı -->
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivLoginLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="40dp"
+        android:src="@android:drawable/ic_menu_gallery"
+        android:padding="2dp"
+        app:strokeWidth="2dp"
+        app:strokeColor="#4FC3F7"
+        app:shapeAppearanceOverlay="@style/CircleImage"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hoş Geldiniz"
+        android:textColor="#FFFFFF"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Kullanıcı Adı -->
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/input_border"
+        android:hint="@string/username_hint"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#888888"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:inputType="text"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Şifre -->
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/input_border"
+        android:hint="@string/password_hint"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#888888"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:inputType="textPassword"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Rol Seçimi -->
+    <RadioGroup
+        android:id="@+id/rgLoginRole"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="24dp">
+
+        <RadioButton
+            android:id="@+id/rbLoginStudent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/role_student"
+            android:textColor="#FFFFFF"
+            android:buttonTint="#4FC3F7"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/rbLoginRepresentative"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sorumlu"
+            android:textColor="#FFFFFF"
+            android:buttonTint="#4FC3F7" />
+    </RadioGroup>
+
+    <!-- Giriş Butonu -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="@string/login_btn_text"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#4FC3F7"
+        android:textSize="16sp"
+        android:textAllCaps="false" />
+
+    <!-- Alt Linkler -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp">
+
+        <TextView
+            android:id="@+id/tvRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yeni Kayıt"
+            android:textColor="#4FC3F7"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/tvForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Şifremi Unuttum"
+            android:textColor="#4FC3F7"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+</LinearLayout>
