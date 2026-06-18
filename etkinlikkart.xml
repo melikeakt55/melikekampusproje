@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="12dp"
+    android:background="@drawable/card_border_blue"
+    android:padding="4dp">
+
+    <!-- Etkinlik Görseli -->
+    <ImageView
+        android:id="@+id/ivEtkinlikGorsel"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop"
+        android:background="#3A3A4E"
+        android:contentDescription="Etkinlik görseli" />
+
+    <!-- Detaylar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tvEtkinlikAdi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="etkinlik adı:"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tvTarihSaat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tarih ve saat:"
+            android:textColor="#CCCCCC"
+            android:textSize="12sp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tvYerMekan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="yer mekan:"
+            android:textColor="#CCCCCC"
+            android:textSize="12sp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tvEtkinlikDetay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="etkinlik detayları:"
+            android:textColor="#AAAAAA"
+            android:textSize="12sp" />
+
+        <!-- Katılım Butonu (öğrenci için) -->
+        <!-- Touch target size hatası için yükseklik 48dp yapıldı -->
+        <Button
+            android:id="@+id/btnKatilimTalebi"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:text="Katılım Talebi Gönder"
+            android:textSize="14sp"
+            android:backgroundTint="#4FC3F7"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"
+            android:visibility="visible" />
+
+    </LinearLayout>
+</LinearLayout>
